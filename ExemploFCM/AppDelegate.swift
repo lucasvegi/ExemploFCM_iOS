@@ -8,23 +8,128 @@
 
 import UIKit
 import CoreData
+import Firebase //IMPORTANTE PARA FCM
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    var window: UIWindow?
+    let gcmMessageIDKey = "gcm.message_id" //IMPORTANTE PARA FCM
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        FirebaseApp.configure() //IMPORTANTE PARA FCM
+        
+        // Obtem TOKEN FCM
+        Messaging.messaging().delegate = self as? MessagingDelegate
+        print("\n\nTOKEN FCM: ", Messaging.messaging().fcmToken, "\n\n")
+        // -------
+        
+        //Registrar o app para receber notificações remotas - FCM
+        if #available(iOS 10.0, *) {
+          // For iOS 10 display notification (sent via APNS)
+            UNUserNotificationCenter.current().delegate = self as? UNUserNotificationCenterDelegate
+
+          let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+          UNUserNotificationCenter.current().requestAuthorization(
+            options: authOptions,
+            completionHandler: {_, _ in })
+        } else {
+          let settings: UIUserNotificationSettings =
+          UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+          application.registerUserNotificationSettings(settings)
+        }
+        application.registerForRemoteNotifications()
+        //-----------
+
+        
         return true
     }
+    
+
+    
+    //Processar mensagens recebidas pela interface de APNs do FCM
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
+        print("\n\nRECEBI 1 \n\n")
+        // If you are receiving a notification message while your app is in the background,
+        // this callback will not be fired till the user taps on the notification launching the application.
+        // TODO: Handle data of notification
+
+        // With swizzling disabled you must let Messaging know about the message, for Analytics
+        // Messaging.messaging().appDidReceiveMessage(userInfo)
+
+        // Print message ID.
+        if let messageID = userInfo[gcmMessageIDKey] {
+            print("Message ID: \(messageID)")
+        }
+
+        // Print full message.
+        print(userInfo)
+        print("\n\n", userInfo["aps"]!)
+        
+        //converte json FCM em strings
+        let json = userInfo["aps"] as? [String:Any]
+        print("\n\n", json!)
+        print("\n\n", json?["alert"]!)
+        
+        let mensagem = json?["alert"] as? [String:Any]
+        print(mensagem!)
+        
+        let titulo = mensagem?["title"]! as! String
+        let corpo = mensagem?["body"]! as! String
+        
+        print("\n\nTitulo: ", titulo, " Corpo: ", corpo)
+        
+    }
+
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any],
+                     fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        print("\n\nRECEBI 2 \n\n")
+        // If you are receiving a notification message while your app is in the background,
+        // this callback will not be fired till the user taps on the notification launching the application.
+        // TODO: Handle data of notification
+
+        // With swizzling disabled you must let Messaging know about the message, for Analytics
+        // Messaging.messaging().appDidReceiveMessage(userInfo)
+
+        // Print message ID.
+        if let messageID = userInfo[gcmMessageIDKey] {
+            print("Message ID: \(messageID)")
+        }
+
+        // Print full message.
+        print(userInfo)
+        print("\n\n", userInfo["aps"]!)
+        
+        //converte json FCM em strings
+        let json = userInfo["aps"] as? [String:Any]
+        print("\n\n", json!)
+        print("\n\n", json?["alert"]!)
+        
+        let mensagem = json?["alert"] as? [String:Any]
+        print(mensagem!)
+        
+        let titulo = mensagem?["title"]! as! String
+        let corpo = mensagem?["body"]! as! String
+        
+        print("\n\nTitulo: ", titulo, " Corpo: ", corpo)
+        
+        //dispara a notificação
+        completionHandler(UIBackgroundFetchResult.newData)
+    }
+    //--Processar mensagens recebidas pela interface de APNs do FCM
+    
 
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
+        
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+
     }
 
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {

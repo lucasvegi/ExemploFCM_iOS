@@ -19,20 +19,23 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mensagem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lA-Cs-08D">
-                    <rect key="frame" x="145" y="323" width="85" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mensagem" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lA-Cs-08D">
+                    <rect key="frame" x="30" y="323.5" width="315" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TokenFCM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAo-Dj-sEb">
-                    <rect key="frame" x="146.5" y="458" width="82" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TokenFCM" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAo-Dj-sEb">
+                    <rect key="frame" x="30" y="458" width="315" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vkl-Lx-joU">
-                    <rect key="frame" x="153.5" y="30" width="68" height="194"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vkl-Lx-joU">
+                    <rect key="frame" x="111" y="30" width="175" height="36"/>
+                    <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <size key="titleShadowOffset" width="3" height="3"/>
                     <state key="normal" title="Ver Token"/>
                     <connections>
                         <action selector="verToken" destination="-1" eventType="touchUpInside" id="yNg-6X-zFS"/>
@@ -41,16 +44,21 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="hAo-Dj-sEb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="1pc-pc-zyC"/>
                 <constraint firstItem="8lA-Cs-08D" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2E4-Lo-GR4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hAo-Dj-sEb" secondAttribute="trailing" constant="30" id="5KV-dN-p7f"/>
+                <constraint firstItem="Vkl-Lx-joU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="150" id="9cp-Jp-mp0"/>
                 <constraint firstItem="8lA-Cs-08D" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="9gC-Wz-QHn"/>
                 <constraint firstItem="hAo-Dj-sEb" firstAttribute="top" secondItem="8lA-Cs-08D" secondAttribute="bottom" constant="114" id="Foj-Nm-Xwn"/>
                 <constraint firstItem="Vkl-Lx-joU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="H2Y-sf-NLN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8lA-Cs-08D" secondAttribute="trailing" constant="30" id="Kwd-4p-UJg"/>
                 <constraint firstItem="hAo-Dj-sEb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Oa5-SR-J8o"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Vkl-Lx-joU" secondAttribute="trailing" constant="150" id="dgo-7x-S8f"/>
                 <constraint firstItem="Vkl-Lx-joU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="jcp-hD-7cj"/>
-                <constraint firstItem="8lA-Cs-08D" firstAttribute="top" secondItem="Vkl-Lx-joU" secondAttribute="bottom" constant="99" id="lx6-H7-59P"/>
+                <constraint firstItem="8lA-Cs-08D" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="tvu-1U-H23"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="-73" y="74"/>
+            <point key="canvasLocation" x="-74.400000000000006" y="73.313343328335833"/>
         </view>
     </objects>
 </document>

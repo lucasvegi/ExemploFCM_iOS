@@ -3,29 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B38F6D9308286B7585A55DC /* Pods_ExemploFCM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AB9461E077C9D81718AF43 /* Pods_ExemploFCM.framework */; };
+		B346410C2409B0B9006C068D /* FCM_Msg.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346410B2409B0B9006C068D /* FCM_Msg.swift */; };
+		B346410E2409B13D006C068D /* AlertaFCM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346410D2409B13D006C068D /* AlertaFCM.swift */; };
 		B3AD8F9F24080294007DBE3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AD8F9E24080294007DBE3E /* AppDelegate.swift */; };
-		B3AD8FA124080294007DBE3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AD8FA024080294007DBE3E /* SceneDelegate.swift */; };
 		B3AD8FA424080294007DBE3E /* ExemploFCM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3AD8FA224080294007DBE3E /* ExemploFCM.xcdatamodeld */; };
 		B3AD8FA624080294007DBE3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AD8FA524080294007DBE3E /* ContentView.swift */; };
 		B3AD8FA824080296007DBE3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3AD8FA724080296007DBE3E /* Assets.xcassets */; };
 		B3AD8FAB24080296007DBE3E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3AD8FAA24080296007DBE3E /* Preview Assets.xcassets */; };
-		B3AD8FAE24080296007DBE3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3AD8FAC24080296007DBE3E /* LaunchScreen.storyboard */; };
+		B3AD8FB724080323007DBE3E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AD8FB524080323007DBE3E /* MainViewController.swift */; };
+		B3AD8FB824080323007DBE3E /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3AD8FB624080323007DBE3E /* MainViewController.xib */; };
+		B3AD8FBA24080597007DBE3E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3AD8FB924080596007DBE3E /* GoogleService-Info.plist */; };
+		B3AD8FBE24083878007DBE3E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AD8FBD24083877007DBE3E /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FE205422384F62C62A890BC /* Pods-ExemploFCM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExemploFCM.release.xcconfig"; path = "Target Support Files/Pods-ExemploFCM/Pods-ExemploFCM.release.xcconfig"; sourceTree = "<group>"; };
+		B346410B2409B0B9006C068D /* FCM_Msg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCM_Msg.swift; sourceTree = "<group>"; };
+		B346410D2409B13D006C068D /* AlertaFCM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertaFCM.swift; sourceTree = "<group>"; };
 		B3AD8F9B24080294007DBE3E /* ExemploFCM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExemploFCM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3AD8F9E24080294007DBE3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B3AD8FA024080294007DBE3E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B3AD8FA324080294007DBE3E /* ExemploFCM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExemploFCM.xcdatamodel; sourceTree = "<group>"; };
 		B3AD8FA524080294007DBE3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B3AD8FA724080296007DBE3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3AD8FAA24080296007DBE3E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B3AD8FAD24080296007DBE3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3AD8FAF24080296007DBE3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3AD8FB524080323007DBE3E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B3AD8FB624080323007DBE3E /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		B3AD8FB924080596007DBE3E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B3AD8FBB24081E85007DBE3E /* ExemploFCM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExemploFCM.entitlements; sourceTree = "<group>"; };
+		B3AD8FBC24081FDF007DBE3E /* ExemploFCMDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ExemploFCMDebug.entitlements; sourceTree = "<group>"; };
+		B3AD8FBD24083877007DBE3E /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D0AB9461E077C9D81718AF43 /* Pods_ExemploFCM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExemploFCM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2832CB7AC6F43958410F20C /* Pods-ExemploFCM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExemploFCM.debug.xcconfig"; path = "Target Support Files/Pods-ExemploFCM/Pods-ExemploFCM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +47,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B38F6D9308286B7585A55DC /* Pods_ExemploFCM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		881A5EED7A338AEDE74EB07B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0AB9461E077C9D81718AF43 /* Pods_ExemploFCM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B346410F2409C8B4006C068D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B346410B2409B0B9006C068D /* FCM_Msg.swift */,
+				B346410D2409B13D006C068D /* AlertaFCM.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B34641102409C8C7006C068D /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				B3AD8FB524080323007DBE3E /* MainViewController.swift */,
+				B3AD8FB624080323007DBE3E /* MainViewController.xib */,
+			);
+			path = viewController;
+			sourceTree = "<group>";
+		};
 		B3AD8F9224080294007DBE3E = {
 			isa = PBXGroup;
 			children = (
+				B3AD8FB924080596007DBE3E /* GoogleService-Info.plist */,
 				B3AD8F9D24080294007DBE3E /* ExemploFCM */,
 				B3AD8F9C24080294007DBE3E /* Products */,
+				F10AC3EE9DA8FB01B31C2460 /* Pods */,
+				881A5EED7A338AEDE74EB07B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +103,15 @@
 			isa = PBXGroup;
 			children = (
 				B3AD8F9E24080294007DBE3E /* AppDelegate.swift */,
-				B3AD8FA024080294007DBE3E /* SceneDelegate.swift */,
+				B3AD8FBD24083877007DBE3E /* SceneDelegate.swift */,
 				B3AD8FA524080294007DBE3E /* ContentView.swift */,
-				B3AD8FA724080296007DBE3E /* Assets.xcassets */,
-				B3AD8FAC24080296007DBE3E /* LaunchScreen.storyboard */,
 				B3AD8FAF24080296007DBE3E /* Info.plist */,
+				B3AD8FBC24081FDF007DBE3E /* ExemploFCMDebug.entitlements */,
+				B3AD8FBB24081E85007DBE3E /* ExemploFCM.entitlements */,
 				B3AD8FA224080294007DBE3E /* ExemploFCM.xcdatamodeld */,
+				B34641102409C8C7006C068D /* viewController */,
+				B346410F2409C8B4006C068D /* model */,
+				B3AD8FA724080296007DBE3E /* Assets.xcassets */,
 				B3AD8FA924080296007DBE3E /* Preview Content */,
 			);
 			path = ExemploFCM;
@@ -78,6 +125,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F10AC3EE9DA8FB01B31C2460 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2832CB7AC6F43958410F20C /* Pods-ExemploFCM.debug.xcconfig */,
+				4FE205422384F62C62A890BC /* Pods-ExemploFCM.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3AD8FB224080296007DBE3E /* Build configuration list for PBXNativeTarget "ExemploFCM" */;
 			buildPhases = (
+				5339114FE1E005CB3DAA27CF /* [CP] Check Pods Manifest.lock */,
 				B3AD8F9724080294007DBE3E /* Sources */,
 				B3AD8F9824080294007DBE3E /* Frameworks */,
 				B3AD8F9924080294007DBE3E /* Resources */,
+				C9B93AD6AEDEC7E90F6B76B5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,38 +194,73 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3AD8FAE24080296007DBE3E /* LaunchScreen.storyboard in Resources */,
 				B3AD8FAB24080296007DBE3E /* Preview Assets.xcassets in Resources */,
+				B3AD8FBA24080597007DBE3E /* GoogleService-Info.plist in Resources */,
 				B3AD8FA824080296007DBE3E /* Assets.xcassets in Resources */,
+				B3AD8FB824080323007DBE3E /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5339114FE1E005CB3DAA27CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExemploFCM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9B93AD6AEDEC7E90F6B76B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExemploFCM/Pods-ExemploFCM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExemploFCM/Pods-ExemploFCM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExemploFCM/Pods-ExemploFCM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B3AD8F9724080294007DBE3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3AD8FBE24083878007DBE3E /* SceneDelegate.swift in Sources */,
+				B346410E2409B13D006C068D /* AlertaFCM.swift in Sources */,
 				B3AD8FA424080294007DBE3E /* ExemploFCM.xcdatamodeld in Sources */,
+				B346410C2409B0B9006C068D /* FCM_Msg.swift in Sources */,
 				B3AD8F9F24080294007DBE3E /* AppDelegate.swift in Sources */,
 				B3AD8FA624080294007DBE3E /* ContentView.swift in Sources */,
-				B3AD8FA124080294007DBE3E /* SceneDelegate.swift in Sources */,
+				B3AD8FB724080323007DBE3E /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		B3AD8FAC24080296007DBE3E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B3AD8FAD24080296007DBE3E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B3AD8FB024080296007DBE3E /* Debug */ = {
@@ -286,19 +379,24 @@
 		};
 		B3AD8FB324080296007DBE3E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2832CB7AC6F43958410F20C /* Pods-ExemploFCM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = ExemploFCM/ExemploFCMDebug.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"ExemploFCM/Preview Content\"";
-				DEVELOPMENT_TEAM = T27P2U47KX;
+				DEVELOPMENT_TEAM = 7S2H235A78;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ExemploFCM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = labd2m.ExemploFCM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Perfil de desenvolvimento (ExemploFCM)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -306,19 +404,24 @@
 		};
 		B3AD8FB424080296007DBE3E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FE205422384F62C62A890BC /* Pods-ExemploFCM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = ExemploFCM/ExemploFCM.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"ExemploFCM/Preview Content\"";
-				DEVELOPMENT_TEAM = T27P2U47KX;
+				DEVELOPMENT_TEAM = 7S2H235A78;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ExemploFCM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = labd2m.ExemploFCM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Perfil de desenvolvimento (ExemploFCM)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
